@@ -35,7 +35,7 @@ export const listOrders = /* GraphQL */ `
         user
         date
         total
-        orders {
+        books {
           nextToken
         }
         createdAt
@@ -60,6 +60,9 @@ export const listBooks = /* GraphQL */ `
         author
         featured
         price
+        orders {
+          nextToken
+        }
         createdAt
         updatedAt
       }
